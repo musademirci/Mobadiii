@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "637086030520",
+    "firebase_url": "https://mobadi-1e833.firebaseio.com",
+    "project_id": "mobadi-1e833",
+    "storage_bucket": "mobadi-1e833.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637086030520:android:88770fadd230b3bb",
+        "android_client_info": {
+          "package_name": "com.example.mobadi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637086030520-mv5o96kln4dgid1j8a53ej6tthakuihr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mobadi",
+            "certificate_hash": "d88f370d7156f4347fc409104f4e782f62884031"
+          }
+        },
+        {
+          "client_id": "637086030520-numvdlpl99titibgfvp38cl00lk6ut2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZHNaxDf8-Z47N28-8fsHUTdEGYQyhlhU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637086030520-numvdlpl99titibgfvp38cl00lk6ut2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

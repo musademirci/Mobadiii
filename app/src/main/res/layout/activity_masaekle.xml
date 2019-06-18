@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/arkaplan"
+        android:orientation="vertical"
+        tools:context=".UrunEkle">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/banner">
+
+            <Button
+                android:id="@+id/banner2"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/path" />
+
+            <Button
+                android:id="@+id/banner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/banner"
+                android:text="Mobadi"
+                android:textAllCaps="false"
+                android:textColor="@color/mavi"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="Masa Ekle"
+            android:textColor="@color/banner"
+            android:textSize="35sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="25dp">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masa Adi:"
+                android:textColor="@color/banner"
+                android:layout_alignBottom="@id/urunadi"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/masaadi"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:inputType="text"
+                android:textColor="@color/banner"
+                android:textSize="20sp"
+                android:theme="@style/CustomEditTextStyle" />
+
+
+            <Button
+                android:id="@+id/btnmasaekle"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="Ekle"
+                android:textColor="@color/banner"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btnmasalistele"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Masaları listele"
+                android:textColor="@color/banner"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>

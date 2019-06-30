@@ -1,7 +1,7 @@
-package com.example.mobadi;
+package com.example.mobadi.Model;
 
 public class Masalar {
-    private String masaadi;
+    String masaadi;
 
     public Masalar(String masaadi) {
         this.masaadi = masaadi;

@@ -2,5 +2,6 @@
     <string name="app_name">Mobadi</string>
     <string name="as">b</string>
     <string name="title_activity_news_web_view">NewsWebView</string>
+    <string name="title_activity_kayit_ol">Kayit_ol</string>
 
 </resources>

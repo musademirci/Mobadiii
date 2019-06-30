@@ -20,6 +20,12 @@
             android:id="@+id/rTitleTv"
             android:gravity="center"
             android:textSize="22sp"/>
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rUrunFiyat"
+        android:gravity="center"
+        android:textSize="22sp"/>
 
     </LinearLayout>
 

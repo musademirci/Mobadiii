@@ -11,13 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Masalistele"></activity>
-        <activity android:name=".Urun_list" />
-        <activity android:name=".Kategori_list" />
+        <activity android:name=".kayit_ol"></activity>
+        <activity android:name=".listeleme.Kategori_Sec_Ekle" />
+        <activity android:name=".Giris_yap" />
+        <activity android:name=".listeleme.SilMasaListele" />
+        <activity android:name=".listeleme.Siparis_list" />
+        <activity android:name=".listeleme.Masalistele" />
+        <activity android:name=".listeleme.Urun_list" />
+        <activity android:name=".listeleme.Kategori_list" />
         <activity android:name=".Masaekle" />
-        <activity android:name=".Rapor" />
         <activity android:name=".UrunEkle" />
-        <activity android:name=".UrunVeyaKategori" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

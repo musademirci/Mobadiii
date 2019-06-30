@@ -63,27 +63,6 @@
             android:background="@drawable/textviewcircle"/>
 
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/b4"
-            style="@style/AppTheme."
-            android:layout_margin="10dp"
-            android:drawableTop="@drawable/masa2"
-            android:text="Mekan Düzeni"
-            android:layout_below="@id/b2"
-            android:background="@drawable/textviewcircle"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:drawableTop="@drawable/urun"
-            style="@style/AppTheme."
-            android:text="Menü Düzenle"
-            android:id="@+id/b5"
-            android:layout_below="@id/b4"
-            android:background="@drawable/textviewcircle"/>
 
         <Button
             android:layout_width="wrap_content"
@@ -93,8 +72,33 @@
             style="@style/AppTheme."
             android:drawableTop="@drawable/siparisiptal"
             android:text="Siparişler"
-            android:layout_toRightOf="@id/b4"
             android:layout_below="@id/b2"
+            android:background="@drawable/textviewcircle"/>
+
+        <Button
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b4"
+            style="@style/AppTheme."
+            android:layout_margin="10dp"
+            android:drawableTop="@drawable/masa2"
+            android:text="Mekan Düzeni"
+            android:layout_below="@id/b1"
+            android:layout_toRightOf="@+id/b6"
+            android:background="@drawable/textviewcircle"/>
+
+
+        <Button
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableTop="@drawable/urun"
+            style="@style/AppTheme."
+            android:text="Menü Düzenle"
+            android:id="@+id/b5"
+            android:layout_below="@id/b4"
             android:background="@drawable/textviewcircle"/>
 
 

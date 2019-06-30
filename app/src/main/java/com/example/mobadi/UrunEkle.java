@@ -70,7 +70,6 @@ public class UrunEkle extends Activity {
                         );
                     }
 
-
                     finish();
                     startActivity(getIntent());
 

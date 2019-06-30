@@ -72,8 +72,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:inputType="text"
-                android:textColor="@color/banner"
                 android:textSize="20sp"
+                android:textColor="@color/banner"
                 android:theme="@style/CustomEditTextStyle" />
             <TextView
                 android:id="@+id/tv2"

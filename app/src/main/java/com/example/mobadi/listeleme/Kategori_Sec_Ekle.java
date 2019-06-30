@@ -1,34 +1,31 @@
-package com.example.mobadi;
+package com.example.mobadi.listeleme;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-
+import android.widget.TextView;
 
 import com.example.mobadi.Model.Model;
+import com.example.mobadi.R;
+import com.example.mobadi.ViewHolder;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 
-public class Urun_list extends AppCompatActivity {
-
+public class Kategori_Sec_Ekle extends AppCompatActivity {
     RecyclerView mrecyclerView;
     FirebaseDatabase mFirebaseDatabase;
     DatabaseReference mRef;
-    Button siparisekle;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.kategori_list);
-
-        FirebaseDatabase database =FirebaseDatabase.getInstance();
-        DatabaseReference myref = database.getReference();
+        setContentView(R.layout.activity_kategori__sec__ekle);
 
 
 
@@ -37,27 +34,23 @@ public class Urun_list extends AppCompatActivity {
         mrecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mRef=mFirebaseDatabase.getReference("Menu");
-        String urun = getIntent().getStringExtra("urunKategori");
-        firebaseSearch(urun);
-
     }
 
-
-
-    private void firebaseSearch(String src){
-        Query firebaseSerachQuery = mRef.orderByChild("urunKategori").startAt(src).endAt(src+"\uf8ff");
-
-        FirebaseRecyclerAdapter<Model,ViewHolder> firebaseRecyclerAdapter =
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseRecyclerAdapter<Model, ViewHolder> firebaseRecyclerAdapter =
                 new FirebaseRecyclerAdapter<Model, ViewHolder>(
                         Model.class,
-                        R.layout.urun_list,
+                        R.layout.kategori_srl,
                         ViewHolder.class,
-                        firebaseSerachQuery
+                        mRef
                 ) {
                     @Override
                     protected void populateViewHolder(ViewHolder viewHolder, Model model, int position) {
-                        viewHolder.setDetails(getApplicationContext(),model.getAdi());
+                        viewHolder.setDetails(getApplicationContext(),model.getUrunKategori());
                     }
+
                     @Override
                     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
                         ViewHolder viewHolder=super.onCreateViewHolder(parent,viewType);
@@ -66,6 +59,12 @@ public class Urun_list extends AppCompatActivity {
                             @Override
                             public void onItemClick(View view, int position) {
 
+                                TextView mTitleTv = view.findViewById(R.id.rTitleTv);
+                                String mTitle = mTitleTv.getText().toString();
+
+                                Intent intent = new Intent(view.getContext(), Urun_list.class);
+                                intent.putExtra("urunKategori",mTitle);
+                                startActivity(intent);
 
 
                             }
@@ -73,11 +72,11 @@ public class Urun_list extends AppCompatActivity {
                             @Override
                             public void onItemLongClick(View view, int position) {
 
+
                             }
                         });
                         return viewHolder;
                     }
-
                 };
         mrecyclerView.setAdapter(firebaseRecyclerAdapter);
 

@@ -92,6 +92,30 @@
 
         </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masa Sil"
+        android:textColor="@color/banner"
+        android:textSize="30sp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnmasasil"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Bütün Masaları Sil"
+        android:textColor="@color/banner"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    </LinearLayout>
 
 
 

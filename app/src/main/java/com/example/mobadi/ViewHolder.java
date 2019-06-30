@@ -33,8 +33,23 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     public void setDetails(Context ctx,String title){
         TextView mTitleView = mView.findViewById(R.id.rTitleTv);
 
+
         mTitleView.setText(title);
     }
+
+    public void setDetailss(Context ctx,String title,String fiyat){
+        TextView mTitleView = mView.findViewById(R.id.rTitleTv);
+        mTitleView.setText(title);
+        TextView mTitleView2 = mView.findViewById(R.id.rUrunFiyat);
+        mTitleView2.setText(fiyat);
+    }
+    public void setDetailsss(Context ctx,String title,String fiyat){
+        TextView mTitleView = mView.findViewById(R.id.rTitleTv);
+        mTitleView.setText(title);
+        TextView mTitleView2 = mView.findViewById(R.id.rUrunFiyat);
+        mTitleView2.setText(fiyat);
+    }
+
 
     private  ViewHolder.ClickListener mclickListener;
 

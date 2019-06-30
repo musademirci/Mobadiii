@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/arkaplan"
+    tools:context=".Giris_yap">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/banner"
+        tools:ignore="MissingConstraints">
+        <Button
+            android:id="@+id/banner2"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:background="@drawable/path"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobadi"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:background="@color/banner"
+            android:textColor="@color/mavi"
+            android:layout_gravity="center"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="200dp"
+        >
+
+
+
+
+        <EditText
+            android:id="@+id/mailet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/banner"
+            android:theme="@style/CustomEditTextStyle"
+            android:layout_margin="5dp"
+            android:hint="E-Posta"/>
+
+        <EditText
+            android:id="@+id/sifreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/banner"
+            android:theme="@style/CustomEditTextStyle"
+            android:inputType="textPassword"
+            android:layout_margin="5dp"
+            android:hint="Şifre"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yap"
+            android:id="@+id/bgiris"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/gkayit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Kayıt Ol"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
